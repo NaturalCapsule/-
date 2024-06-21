@@ -14,11 +14,6 @@ from sklearn.naive_bayes import GaussianNB
 from sklearn.model_selection import train_test_split, GridSearchCV, cross_val_score
 from sklearn.metrics import accuracy_score, confusion_matrix
 
-dataset = pd.read_csv('/home/naturalcapsule/python/Social_Network_Ads.csv')
-x = dataset.iloc[:, :-1].values
-y = dataset.iloc[:, -1].values
-
-
 class Classification:
     def __init__(self) -> None:
         pass
@@ -175,9 +170,3 @@ class Classification:
         {self.fit_XGBClassifier(x_train, x_test, y_train, y_test)}
         print("─────────────────────────────────────────────────────────────────────")
         return ''
-
-
-c = Classification()
-
-x_train, x_test, y_train, y_test = train_test_split(x, y, test_size = 0.2, random_state = 0)
-print(c.fit_All(x_train, x_test, y_train, y_test))
