@@ -1,1 +1,1 @@
-NOT COMPLETE
+This is just for making data preprocessing easiser, but you can also just get a classification dataset, load the dataset, seperate X and y, train test split the data and you can make it fit on All classification or a specific one!
