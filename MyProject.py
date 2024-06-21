@@ -16,7 +16,7 @@ from sklearn.metrics import accuracy_score, confusion_matrix
 
 class Classification:
     def __init__(self) -> None:
-        pass
+        print('Be patient this will take some time!')
     def Label_Encode(self, y):
         le = LabelEncoder()
         y = le.fit_transform(y)
